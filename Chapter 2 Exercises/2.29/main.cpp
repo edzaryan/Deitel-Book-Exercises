@@ -17,11 +17,9 @@ int main() {
         cout << "Please enter a five digit number: ";
         cin >> number;
 
-        if (number >= 10000 && number <= 99999) {
-            break;
-        } else {
+        if (number >= 10000 && number <= 99999) break;
+        else 
             cout << "Error: The number is not five digits." << endl;
-        }
     }
     
 

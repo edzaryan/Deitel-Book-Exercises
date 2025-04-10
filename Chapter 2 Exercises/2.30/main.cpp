@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    
     int binary, decimal = 0, base = 1, digit;
 
     cout << "Enter a binary number (only 0s and 1s): ";

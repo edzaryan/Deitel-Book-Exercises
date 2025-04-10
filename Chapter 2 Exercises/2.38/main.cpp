@@ -53,12 +53,23 @@ int main() {
     cout << "Enter the number of terms to use: ";
     cin >> n;
 
-    double result = 1.0;
-    double term = 1.0;
+    double result = 0.0;
 
-    for (int i = 1; i <= n; ++i) {
-        term = term * x / i;
-        result += term;
+    for (int i = 0; i < n; ++i) {
+        // Calculate x^i manually
+        double power = 1.0;
+        for (int j = 1; j <= i; ++j) {
+            power *= x;
+        }
+
+        // Calculate i! manually
+        int factorial = 1;
+        for (int j = 1; j <= i; ++j) {
+            factorial *= j;
+        }
+
+        // Add the term to the result
+        result += power / factorial;
     }
 
     cout << "Approximation of e^" << x << " is: " << result << endl;
