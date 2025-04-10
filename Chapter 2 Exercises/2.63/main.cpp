@@ -6,7 +6,6 @@ using namespace std;
 int main() {
 
     for (int day = 1; day <= 12; ++day) {
-        // Print day line
         cout << "On the ";
 
         switch (day) {
@@ -26,7 +25,6 @@ int main() {
 
         cout << " day of Christmas, my true love sent to me:\n";
 
-        // Print gifts in reverse order
         switch (day) {
             case 12: cout << "Twelve drummers drumming\n";
             case 11: cout << "Eleven pipers piping\n";
